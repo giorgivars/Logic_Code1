@@ -10,7 +10,7 @@ const client = new Client({
 });
 let checkinterval;
 let serverid = "1031740838864240640"
-let token = "MTAwNjY2NjgzOTEwNDk0NjI5Nw.G8frw7.quub6yY8SnM3l7hMZb4mxNhvys0okupW27amio"
+let token = "MTAwNjY2NjgzOTEwNDk0NjI5Nw.GFHyUi.pKae_iG7D8HqFamC4yTq8bMGxeNSYECGSRwHAk"
 let updating = false
 let BotData
 let disabledcmd = []

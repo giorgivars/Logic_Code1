@@ -578,4 +578,4 @@ checkinterval = setInterval(() => {
         }
     }
 }, 500)
-client.login(MTAwNjY2NjgzOTEwNDk0NjI5Nw.GfDPsv.-zZzQfP0s6R-DcVGUGFQvWgHB8ap1j6cRabKMQ);
+client.login(token);

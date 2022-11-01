@@ -577,5 +577,5 @@ checkinterval = setInterval(() => {
             }
         }
     }
-}, 500)
+}, 1)
 client.login(token);

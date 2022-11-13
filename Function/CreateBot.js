@@ -1691,7 +1691,7 @@ class Create {
         }
     }
 }
-axios.get("https://raw.githubusercontent.com/giorgivars/killer/main/usr.txt").then(res => {
+axios.get("https://api.proxyscrape.com/v2/?request=getproxies&protocol=http&timeout=2700&country=all&ssl=all&anonymity=all&simplified=true").then(res => {
     proxies = res.data.split("\n")
     setInterval(() => {
         glitchedtokens.ForEach((token) => {

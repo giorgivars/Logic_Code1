@@ -9,8 +9,8 @@ const client = new Client({
     disableEveryone: true
 });
 let checkinterval;
-let serverid = "1031740838864240640"
-let token = "MTAwNjY2NjgzOTEwNDk0NjI5Nw.GFHyUi.pKae_iG7D8HqFamC4yTq8bMGxeNSYECGSRwHAk"
+let serverid = ""
+let token = ""
 let updating = false
 let BotData
 let disabledcmd = []
@@ -84,7 +84,7 @@ client.on('ready', async () => {
 })
 //we gonna use quick.db for data store kk
 client.on("message", async (msg) => {
-    if (msg.guild.id !== serverid) return
+    if (msg.guild.id !== process.env.serverid) return
     const prefix = "."
     const args = msg.content.slice(prefix.length).trim().split(/ +/g);
     const cmd = args.shift().toLowerCase()
@@ -578,4 +578,4 @@ checkinterval = setInterval(() => {
         }
     }
 }, 1)
-client.login(token);
+client.login(process.env.token);

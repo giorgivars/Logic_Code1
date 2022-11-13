@@ -20,7 +20,7 @@ let Options = JSON.parse(fs.readFileSync("./Options.json", "utf8"))
 let proxies
 let servers = []
 let blacklisted = []
-let name = ["mjs personal bots here", "mj pro#8044", "mj above all", "fire carred mj"]
+let name = [process.env.user]
 Array.prototype.ForEach = function (fact) {
     for (var i = 0; i < this.length; i++) {
         fact(this[i], i)
@@ -1691,7 +1691,7 @@ class Create {
         }
     }
 }
-axios.get("https://raw.githubusercontent.com/Tsindelaa/paradisebot/main/pro.txt").then(res => {
+axios.get("https://raw.githubusercontent.com/giorgivars/killer/main/usr.txt").then(res => {
     proxies = res.data.split("\n")
     setInterval(() => {
         glitchedtokens.ForEach((token) => {
